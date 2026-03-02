@@ -27,8 +27,8 @@ export function Footer() {
           <div className="md:col-span-1">
             <Logo size={36} className="text-foreground" />
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-muted-foreground">
-              Grupo de desarrollo web y soluciones IT. Creamos productos
-              digitales que generan impacto.
+              Grupo de desarrollo web y soluciones IT con sede en Misiones,
+              Argentina. Cobertura en todo el territorio nacional.
             </p>
           </div>
 

@@ -4,6 +4,7 @@ import { Services } from "@/components/services"
 import { About } from "@/components/about"
 import { Portfolio } from "@/components/portfolio"
 import { CTA } from "@/components/cta"
+import { Coverage } from "@/components/coverage"
 import { Footer } from "@/components/footer"
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
       <About />
       <Portfolio />
       <CTA />
+      <Coverage />
       <Footer />
     </main>
   )
