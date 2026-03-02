@@ -1,3 +1,5 @@
+import { Logo } from "@/components/logo"
+
 const footerLinks = {
   Servicios: [
     { label: "Desarrollo Web", href: "#servicios" },
@@ -23,14 +25,7 @@ export function Footer() {
         <div className="grid gap-10 md:grid-cols-4">
           {/* Brand */}
           <div className="md:col-span-1">
-            <div className="flex items-center gap-2">
-              <div className="flex h-8 w-8 items-center justify-center rounded-md bg-primary">
-                <span className="text-sm font-bold text-primary-foreground">D</span>
-              </div>
-              <span className="text-lg font-bold tracking-tight text-foreground font-mono">
-                Duette Studio
-              </span>
-            </div>
+            <Logo size={36} className="text-foreground" />
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-muted-foreground">
               Estudio de desarrollo web y soluciones IT. Creamos productos
               digitales que generan impacto.
