@@ -1,0 +1,97 @@
+const footerLinks = {
+  Servicios: [
+    { label: "Desarrollo Web", href: "#servicios" },
+    { label: "Apps Responsivas", href: "#servicios" },
+    { label: "UI/UX Design", href: "#servicios" },
+    { label: "Infraestructura IT", href: "#servicios" },
+  ],
+  Empresa: [
+    { label: "Sobre nosotros", href: "#nosotros" },
+    { label: "Proyectos", href: "#proyectos" },
+    { label: "Contacto", href: "#contacto" },
+  ],
+  Legal: [
+    { label: "Privacidad", href: "#" },
+    { label: "Terminos", href: "#" },
+  ],
+}
+
+export function Footer() {
+  return (
+    <footer className="border-t border-border px-6 py-12">
+      <div className="mx-auto max-w-7xl">
+        <div className="grid gap-10 md:grid-cols-4">
+          {/* Brand */}
+          <div className="md:col-span-1">
+            <div className="flex items-center gap-2">
+              <div className="flex h-8 w-8 items-center justify-center rounded-md bg-primary">
+                <span className="text-sm font-bold text-primary-foreground">D</span>
+              </div>
+              <span className="text-lg font-bold tracking-tight text-foreground font-mono">
+                Duette Studio
+              </span>
+            </div>
+            <p className="mt-4 max-w-xs text-sm leading-relaxed text-muted-foreground">
+              Estudio de desarrollo web y soluciones IT. Creamos productos
+              digitales que generan impacto.
+            </p>
+          </div>
+
+          {/* Links */}
+          {Object.entries(footerLinks).map(([category, links]) => (
+            <div key={category}>
+              <p className="mb-4 text-sm font-semibold text-foreground">
+                {category}
+              </p>
+              <ul className="flex flex-col gap-2.5">
+                {links.map((link) => (
+                  <li key={link.label}>
+                    <a
+                      href={link.href}
+                      className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+                    >
+                      {link.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+
+        <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-border pt-8 md:flex-row">
+          <p className="text-xs text-muted-foreground">
+            {"\u00A9"} {new Date().getFullYear()} Duette Studio. Todos los derechos
+            reservados.
+          </p>
+          <div className="flex gap-6">
+            <a
+              href="https://github.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xs text-muted-foreground transition-colors hover:text-foreground"
+            >
+              GitHub
+            </a>
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xs text-muted-foreground transition-colors hover:text-foreground"
+            >
+              LinkedIn
+            </a>
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xs text-muted-foreground transition-colors hover:text-foreground"
+            >
+              Instagram
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  )
+}
