@@ -1,15 +1,16 @@
 interface LogoProps {
   className?: string
-  /** Show only the monogram mark */
+  /** Show only the TT monogram mark */
   markOnly?: boolean
-  /** Override height in px – width scales proportionally */
+  /** Override height in px - width scales proportionally */
   size?: number
 }
 
 /**
- * Duette Studio logo inspired by the serif‑monogram style.
- * Two elegant "D" letters as the brand mark, with the full
- * name rendered below when `markOnly` is false.
+ * Duette Group / Grupo Duette logo.
+ * Two serif capital "T" letters as the monogram brand mark,
+ * faithfully reproducing the original TT logo style with thick
+ * horizontal serifs and vertical strokes.
  */
 export function Logo({ className, markOnly = false, size = 40 }: LogoProps) {
   if (markOnly) {
@@ -17,98 +18,102 @@ export function Logo({ className, markOnly = false, size = 40 }: LogoProps) {
       <svg
         width={size}
         height={size}
-        viewBox="0 0 80 80"
+        viewBox="0 0 100 100"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
         className={className}
-        aria-label="Duette Studio"
+        aria-label="Duette Group"
       >
-        {/* Left D */}
-        <path
-          d="M10 16h12c14 0 22 8 22 22s-8 22-22 22H10V16zm6 5v34h6c10.5 0 16.5-6.5 16.5-17S32.5 21 22 21h-6z"
-          fill="currentColor"
-        />
-        {/* Right D, slightly overlapping */}
-        <path
-          d="M38 16h12c14 0 22 8 22 22s-8 22-22 22H38V16zm6 5v34h6c10.5 0 16.5-6.5 16.5-17S56.5 21 50 21h-6z"
-          fill="currentColor"
-          opacity="0.6"
-        />
-        {/* Thin top accent line */}
-        <rect x="8" y="12" width="64" height="1.5" rx="0.75" fill="currentColor" opacity="0.25" />
-        {/* Thin bottom accent line */}
-        <rect x="8" y="63" width="64" height="1.5" rx="0.75" fill="currentColor" opacity="0.25" />
+        {/* Left T */}
+        {/* Top horizontal bar */}
+        <rect x="6" y="10" width="46" height="6" fill="currentColor" />
+        {/* Top serif left */}
+        <rect x="6" y="8" width="8" height="8" fill="currentColor" />
+        {/* Top serif right (shared center) */}
+        <rect x="44" y="8" width="8" height="8" fill="currentColor" />
+        {/* Vertical stroke */}
+        <rect x="24" y="16" width="8" height="68" fill="currentColor" />
+        {/* Bottom serif */}
+        <rect x="16" y="82" width="24" height="6" fill="currentColor" />
+        <rect x="16" y="80" width="6" height="8" fill="currentColor" />
+        <rect x="34" y="80" width="6" height="8" fill="currentColor" />
+
+        {/* Right T */}
+        {/* Top horizontal bar */}
+        <rect x="48" y="10" width="46" height="6" fill="currentColor" />
+        {/* Top serif left (shared center) */}
+        <rect x="48" y="8" width="8" height="8" fill="currentColor" />
+        {/* Top serif right */}
+        <rect x="86" y="8" width="8" height="8" fill="currentColor" />
+        {/* Vertical stroke */}
+        <rect x="68" y="16" width="8" height="68" fill="currentColor" />
+        {/* Bottom serif */}
+        <rect x="58" y="82" width="24" height="6" fill="currentColor" />
+        <rect x="58" y="80" width="6" height="8" fill="currentColor" />
+        <rect x="76" y="80" width="6" height="8" fill="currentColor" />
       </svg>
     )
   }
 
-  // Full logo: monogram + wordmark
-  const aspectRatio = 200 / 80
-  const width = size * aspectRatio
+  // Full logo: TT monogram + "DUETTE GROUP" + "DEVELOPMENT" text
+  const monogramHeight = size
+  const totalHeight = size + size * 0.55
+  const totalWidth = size * 2.6
+
   return (
     <svg
-      width={width}
-      height={size}
-      viewBox="0 0 200 80"
+      width={totalWidth}
+      height={totalHeight}
+      viewBox="0 0 260 155"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       className={className}
-      aria-label="Duette Studio Development"
+      aria-label="Duette Group Development"
     >
-      {/* ── Monogram ── */}
-      {/* Left D */}
-      <path
-        d="M10 8h10c12 0 19 7 19 19s-7 19-19 19H10V8zm5 4.5v29h5c9 0 14.5-5.5 14.5-14.5S39 12.5 30 12.5h-5z"
-        fill="currentColor"
-      />
-      {/* Right D */}
-      <path
-        d="M34 8h10c12 0 19 7 19 19s-7 19-19 19H34V8zm5 4.5v29h5c9 0 14.5-5.5 14.5-14.5S63 12.5 54 12.5h-5z"
-        fill="currentColor"
-        opacity="0.55"
-      />
-      {/* Top accent line */}
-      <rect x="8" y="4" width="56" height="1.2" rx="0.6" fill="currentColor" opacity="0.2" />
-      {/* Bottom accent line */}
-      <rect x="8" y="48.5" width="56" height="1.2" rx="0.6" fill="currentColor" opacity="0.2" />
+      {/* ---- TT Monogram ---- */}
+      {/* Left T */}
+      <rect x="56" y="8" width="46" height="5.5" fill="currentColor" />
+      <rect x="56" y="6" width="7" height="7.5" fill="currentColor" />
+      <rect x="95" y="6" width="7" height="7.5" fill="currentColor" />
+      <rect x="74" y="13.5" width="7.5" height="66" fill="currentColor" />
+      <rect x="65" y="78" width="24" height="5.5" fill="currentColor" />
+      <rect x="65" y="76" width="5.5" height="7.5" fill="currentColor" />
+      <rect x="83.5" y="76" width="5.5" height="7.5" fill="currentColor" />
 
-      {/* ── Wordmark ── */}
+      {/* Right T */}
+      <rect x="100" y="8" width="46" height="5.5" fill="currentColor" />
+      <rect x="100" y="6" width="7" height="7.5" fill="currentColor" />
+      <rect x="139" y="6" width="7" height="7.5" fill="currentColor" />
+      <rect x="118" y="13.5" width="7.5" height="66" fill="currentColor" />
+      <rect x="109" y="78" width="24" height="5.5" fill="currentColor" />
+      <rect x="109" y="76" width="5.5" height="7.5" fill="currentColor" />
+      <rect x="127.5" y="76" width="5.5" height="7.5" fill="currentColor" />
+
+      {/* ---- Text below ---- */}
       <text
-        x="74"
-        y="24"
+        x="100"
+        y="110"
+        textAnchor="middle"
         fill="currentColor"
         fontFamily="'Space Grotesk', var(--font-space-grotesk), system-ui, sans-serif"
         fontSize="18"
         fontWeight="700"
-        letterSpacing="3"
+        letterSpacing="4"
       >
-        DUETTE STUDIO
+        DUETTE GROUP
       </text>
       <text
-        x="74"
-        y="40"
+        x="100"
+        y="128"
+        textAnchor="middle"
         fill="currentColor"
         fontFamily="'Inter', var(--font-inter), system-ui, sans-serif"
-        fontSize="9"
+        fontSize="9.5"
         fontWeight="400"
-        letterSpacing="5.5"
-        opacity="0.5"
+        letterSpacing="6"
+        opacity="0.45"
       >
         DEVELOPMENT
-      </text>
-
-      {/* ── Tagline at bottom ── */}
-      <text
-        x="10"
-        y="72"
-        fill="currentColor"
-        fontFamily="'Inter', var(--font-inter), system-ui, sans-serif"
-        fontSize="7"
-        fontWeight="400"
-        letterSpacing="2"
-        opacity="0.3"
-      >
-        WEB &amp; IT SOLUTIONS
       </text>
     </svg>
   )

@@ -27,7 +27,7 @@ export function Footer() {
           <div className="md:col-span-1">
             <Logo size={36} className="text-foreground" />
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-muted-foreground">
-              Estudio de desarrollo web y soluciones IT. Creamos productos
+              Grupo de desarrollo web y soluciones IT. Creamos productos
               digitales que generan impacto.
             </p>
           </div>
@@ -56,7 +56,7 @@ export function Footer() {
 
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-border pt-8 md:flex-row">
           <p className="text-xs text-muted-foreground">
-            {"\u00A9"} {new Date().getFullYear()} Duette Studio. Todos los derechos
+            {"\u00A9"} {new Date().getFullYear()} Grupo Duette. Todos los derechos
             reservados.
           </p>
           <div className="flex gap-6">

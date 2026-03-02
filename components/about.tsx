@@ -60,7 +60,7 @@ export function About() {
               {"Un estudio peque\u00f1o con grandes ideas"}
             </h2>
             <p className="mt-4 leading-relaxed text-muted-foreground">
-              En Duette Studio creemos que las mejores soluciones nacen de la
+              En Grupo Duette creemos que las mejores soluciones nacen de la
               colaboracion directa con nuestros clientes. No somos una agencia
               masiva, somos un equipo enfocado que trata cada proyecto como
               propio.

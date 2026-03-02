@@ -33,7 +33,7 @@ export function CTA() {
             </p>
             <div className="mt-10 flex flex-col gap-4 sm:flex-row">
               <Button asChild size="lg" className="gap-2">
-                <a href="mailto:hola@duettestudio.com">
+                <a href="mailto:hola@duettegroup.com">
                   Escribinos
                   <ArrowRight className="h-4 w-4" />
                 </a>

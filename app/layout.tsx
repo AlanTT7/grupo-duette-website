@@ -14,8 +14,8 @@ const spaceGrotesk = Space_Grotesk({
 })
 
 export const metadata: Metadata = {
-  title: 'Duette Studio | Desarrollo Web & Soluciones IT',
-  description: 'Duette Studio es un estudio de desarrollo web y soluciones IT. Creamos experiencias digitales modernas, escalables y de alto rendimiento.',
+  title: 'Grupo Duette | Desarrollo Web & Soluciones IT',
+  description: 'Grupo Duette es un estudio de desarrollo web y soluciones IT. Creamos experiencias digitales modernas, escalables y de alto rendimiento.',
   icons: {
     icon: [
       {

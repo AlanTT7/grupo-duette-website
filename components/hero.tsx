@@ -35,7 +35,7 @@ export function Hero() {
         </h1>
 
         <p className="mx-auto mt-6 max-w-2xl text-pretty text-base leading-relaxed text-muted-foreground sm:text-lg">
-          Somos un estudio de desarrollo web y soluciones IT. Transformamos ideas
+          Somos Grupo Duette, desarrollo web y soluciones IT. Transformamos ideas
           en productos digitales modernos, escalables y de alto rendimiento.
         </p>
 
