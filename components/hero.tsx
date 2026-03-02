@@ -5,7 +5,7 @@ export function Hero() {
   return (
     <section
       id="inicio"
-      className="relative flex min-h-screen items-center justify-center overflow-hidden px-6 pt-20"
+      className="relative flex min-h-[85vh] items-center justify-center overflow-hidden px-6 pt-20"
     >
       {/* Subtle grid background */}
       <div
@@ -29,6 +29,7 @@ export function Hero() {
         </div>
 
         <h1 className="text-balance text-4xl font-bold leading-tight tracking-tight text-foreground font-mono sm:text-5xl md:text-6xl lg:text-7xl">
+          <span className="mb-2 block text-lg font-medium tracking-widest text-primary sm:text-xl">Grupo Duette</span>
           Creamos experiencias
           <br />
           <span className="text-primary">digitales</span> que importan
@@ -52,7 +53,7 @@ export function Hero() {
         </div>
 
         {/* Stats bar */}
-        <div className="mx-auto mt-20 grid max-w-2xl grid-cols-3 gap-8 border-t border-border pt-10">
+        <div className="mx-auto mt-14 grid max-w-2xl grid-cols-3 gap-8 border-t border-border pt-8">
           <div>
             <p className="text-2xl font-bold text-foreground font-mono sm:text-3xl">50+</p>
             <p className="mt-1 text-xs text-muted-foreground sm:text-sm">Proyectos entregados</p>

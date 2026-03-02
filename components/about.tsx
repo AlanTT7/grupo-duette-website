@@ -9,7 +9,7 @@ const highlights = [
 
 export function About() {
   return (
-    <section id="nosotros" className="px-6 py-20 md:py-24">
+    <section id="nosotros" className="px-6 py-14 md:py-20">
       <div className="mx-auto max-w-4xl text-center">
         <p className="mb-3 text-sm font-medium uppercase tracking-widest text-primary">
           Sobre nosotros

@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button"
 
 export function CTA() {
   return (
-    <section id="contacto" className="px-6 py-24 md:py-32">
+    <section id="contacto" className="px-6 py-14 md:py-20">
       <div className="mx-auto max-w-7xl">
         <div className="relative overflow-hidden rounded-2xl border border-border bg-card">
           {/* Grid overlay */}
@@ -19,7 +19,7 @@ export function CTA() {
           <div className="pointer-events-none absolute -right-20 -top-20 h-60 w-60 rounded-full bg-primary/10 blur-[80px]" />
           <div className="pointer-events-none absolute -bottom-20 -left-20 h-60 w-60 rounded-full bg-primary/5 blur-[80px]" />
 
-          <div className="relative z-10 flex flex-col items-center px-6 py-16 text-center sm:px-12 md:py-24">
+          <div className="relative z-10 flex flex-col items-center px-6 py-12 text-center sm:px-12 md:py-16">
             <p className="mb-4 text-sm font-medium uppercase tracking-widest text-primary">
               {"Comenc\u00e1 tu proyecto"}
             </p>

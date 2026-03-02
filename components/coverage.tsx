@@ -2,7 +2,7 @@ import { MapPin } from "lucide-react"
 
 export function Coverage() {
   return (
-    <section className="border-t border-border px-6 py-14 md:py-16">
+    <section className="border-t border-border px-6 py-10 md:py-12">
       <div className="mx-auto flex max-w-5xl flex-col items-center gap-8 md:flex-row md:justify-between">
         {/* Left: headline */}
         <div className="text-center md:text-left">
