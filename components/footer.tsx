@@ -61,28 +61,31 @@ export function Footer() {
           </p>
           <div className="flex gap-6">
             <a
-              href="https://github.com"
+              href="#"
               target="_blank"
               rel="noopener noreferrer"
               className="text-xs text-muted-foreground transition-colors hover:text-foreground"
-            >
-              GitHub
-            </a>
-            <a
-              href="https://linkedin.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-xs text-muted-foreground transition-colors hover:text-foreground"
-            >
-              LinkedIn
-            </a>
-            <a
-              href="https://instagram.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-xs text-muted-foreground transition-colors hover:text-foreground"
+              aria-label="Instagram"
             >
               Instagram
+            </a>
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xs text-muted-foreground transition-colors hover:text-foreground"
+              aria-label="Facebook"
+            >
+              Facebook
+            </a>
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xs text-muted-foreground transition-colors hover:text-foreground"
+              aria-label="WhatsApp"
+            >
+              WhatsApp
             </a>
           </div>
         </div>
