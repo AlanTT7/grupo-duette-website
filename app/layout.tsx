@@ -15,7 +15,7 @@ const spaceGrotesk = Space_Grotesk({
 
 export const metadata: Metadata = {
   title: 'Grupo Duette | Desarrollo Web & Soluciones IT',
-  description: 'A BERTO LE DICEN LECHON PORQUE LE GUSTA LA LECHONA Grupo Duette es un estudio de desarrollo web y soluciones IT. Creamos experiencias digitales modernas, escalables y de alto rendimiento.',
+  description: 'Grupo Duette es un estudio de desarrollo web y soluciones IT. Creamos experiencias digitales modernas, escalables y de alto rendimiento.',
   icons: {
     icon: [
       {
