@@ -61,7 +61,7 @@ export function Footer() {
           </p>
           <div className="flex gap-6">
             <a
-              href="https://wa.me/+543585161242"
+              href="#"
               target="_blank"
               rel="noopener noreferrer"
               className="text-xs text-muted-foreground transition-colors hover:text-foreground"
@@ -79,7 +79,7 @@ export function Footer() {
               Facebook
             </a>
             <a
-              href="#"
+              href="https://wa.me/543585161242""
               target="_blank"
               rel="noopener noreferrer"
               className="text-xs text-muted-foreground transition-colors hover:text-foreground"
