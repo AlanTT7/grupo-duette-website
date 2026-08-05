@@ -39,7 +39,7 @@ export function CTA() {
                 </a>
               </Button>
               <Button asChild variant="outline" size="lg">
-                <a href="https://wa.me/" target="_blank" rel="noopener noreferrer">
+                <a href="https://wa.me/543585161242" target="_blank" rel="noopener noreferrer">
                   WhatsApp
                 </a>
               </Button>
