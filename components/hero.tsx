@@ -29,10 +29,7 @@ export function Hero() {
         </div>
 
         <h1 className="text-balance text-4xl font-bold leading-tight tracking-tight text-foreground font-mono sm:text-5xl md:text-6xl lg:text-7xl">
-          <span className="mb-2 block text-lg font-medium tracking-widest text-primary sm:text-xl">Grupo Duette</span>
-          Creamos experiencias
-          <br />
-          <span className="text-primary">digitales</span> que importan
+          Grupo <span className="text-primary">Duette</span>
         </h1>
 
         <p className="mx-auto mt-6 max-w-2xl text-pretty text-base leading-relaxed text-muted-foreground sm:text-lg">
