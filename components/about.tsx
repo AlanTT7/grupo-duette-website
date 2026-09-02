@@ -1,4 +1,5 @@
 import { CheckCircle2 } from "lucide-react"
+import { Reveal } from "@/components/reveal"
 
 const highlights = [
   "Rendimiento y escalabilidad",
@@ -10,7 +11,7 @@ const highlights = [
 export function About() {
   return (
     <section id="nosotros" className="px-6 py-14 md:py-20">
-      <div className="mx-auto max-w-4xl text-center">
+      <Reveal className="mx-auto max-w-4xl text-center">
         <p className="mb-3 text-sm font-medium uppercase tracking-widest text-primary">
           Sobre nosotros
         </p>
@@ -25,17 +26,16 @@ export function About() {
         </p>
 
         <div className="mx-auto mt-10 grid max-w-xl gap-3 sm:grid-cols-2">
-          {highlights.map((item) => (
-            <div
-              key={item}
-              className="flex items-center gap-2.5 rounded-lg border border-border bg-card/50 px-4 py-3"
-            >
-              <CheckCircle2 className="h-4 w-4 shrink-0 text-primary" />
-              <span className="text-sm text-foreground">{item}</span>
-            </div>
+          {highlights.map((item, index) => (
+            <Reveal key={item} delay={index * 100}>
+              <div className="flex items-center gap-2.5 rounded-lg border border-border bg-card/50 px-4 py-3 transition-colors hover:border-primary/40">
+                <CheckCircle2 className="h-4 w-4 shrink-0 text-primary" />
+                <span className="text-sm text-foreground">{item}</span>
+              </div>
+            </Reveal>
           ))}
         </div>
-      </div>
+      </Reveal>
     </section>
   )
 }
