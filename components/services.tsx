@@ -6,6 +6,7 @@ import {
   ShieldCheck,
   Zap,
 } from "lucide-react"
+import { Reveal } from "@/components/reveal"
 
 const services = [
   {
@@ -50,7 +51,7 @@ export function Services() {
   return (
     <section id="servicios" className="px-6 py-14 md:py-20">
       <div className="mx-auto max-w-7xl">
-        <div className="mb-10 max-w-xl">
+        <Reveal className="mb-10 max-w-xl">
           <p className="mb-3 text-sm font-medium uppercase tracking-widest text-primary">
             Servicios
           </p>
@@ -61,24 +62,23 @@ export function Services() {
             Ofrecemos un conjunto completo de servicios para llevar tu presencia
             digital al siguiente nivel.
           </p>
-        </div>
+        </Reveal>
 
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {services.map((service) => (
-            <div
-              key={service.title}
-              className="group rounded-xl border border-border bg-card p-6 transition-all hover:border-primary/40 hover:bg-secondary/50"
-            >
-              <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10 text-primary transition-colors group-hover:bg-primary/20">
-                <service.icon className="h-5 w-5" />
+          {services.map((service, index) => (
+            <Reveal key={service.title} delay={index * 80}>
+              <div className="group h-full rounded-xl border border-border bg-card p-6 transition-all duration-300 hover:-translate-y-1 hover:border-primary/40 hover:bg-secondary/50 hover:shadow-lg">
+                <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10 text-primary transition-colors group-hover:bg-primary/20">
+                  <service.icon className="h-5 w-5" />
+                </div>
+                <h3 className="mb-2 text-lg font-semibold text-foreground">
+                  {service.title}
+                </h3>
+                <p className="text-sm leading-relaxed text-muted-foreground">
+                  {service.description}
+                </p>
               </div>
-              <h3 className="mb-2 text-lg font-semibold text-foreground">
-                {service.title}
-              </h3>
-              <p className="text-sm leading-relaxed text-muted-foreground">
-                {service.description}
-              </p>
-            </div>
+            </Reveal>
           ))}
         </div>
       </div>
